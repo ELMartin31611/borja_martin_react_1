@@ -1,0 +1,20 @@
+export type usuario = {
+  id: number;
+  name: string;
+  edad: string;   
+  slug: string;
+  price: string;     
+  stock: number;
+  is_active: boolean;
+  url_image: string;
+  category_name: string;
+  created_at: string;
+  updated_at: string;
+};
+
+export type PaginatedResponse<T> = {
+  count: number;
+  next: string | null;
+  previous: string | null;
+  results: T[];
+};
